@@ -23,18 +23,30 @@ function initializeNewsletterSignup() {
             const emailInput = form.querySelector('input[type="email"]');
             const email = emailInput.value.trim();
             
+            // Check if CAPTCHA is completed
+            const captchaResponse = grecaptcha.getResponse();
+            if (!captchaResponse) {
+                showMessage('Please complete the CAPTCHA verification.', 'error');
+                return;
+            }
+            
             if (validateEmail(email)) {
                 // Track signup event
                 if (typeof dataLayer !== 'undefined') {
                     dataLayer.push({
                         'event': 'newsletter_signup',
-                        'email': email
+                        'email': email,
+                        'captcha_completed': true
                     });
                 }
                 
-                // Show success message
+                // Here you would typically send the data to your server
+                // For now, we'll just show success message
                 showMessage('Thank you for subscribing!', 'success');
                 emailInput.value = '';
+                
+                // Reset CAPTCHA
+                grecaptcha.reset();
             } else {
                 showMessage('Please enter a valid email address.', 'error');
             }
@@ -219,6 +231,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Creative Xchange website initialized successfully');
 });
+
+// Handle reCAPTCHA loading
+window.onload = function() {
+    if (typeof grecaptcha !== 'undefined') {
+        grecaptcha.ready(function() {
+            console.log('reCAPTCHA loaded successfully');
+        });
+    }
+};
 
 // Add CSS animations
 const style = document.createElement('style');

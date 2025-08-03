@@ -631,6 +631,17 @@ body {
     display: inline-block;
 }
 
+.captcha-container {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: 0 0;
+}
+
 /* Footer */
 .footer {
     background-color: #1f2937;
@@ -759,6 +770,14 @@ body {
         max-width: 100%;
         min-width: unset;
         align-self: auto;
+    }
+    
+    .captcha-container {
+        margin: 12px 0;
+    }
+    
+    .g-recaptcha {
+        transform: scale(0.8);
     }
 }
 

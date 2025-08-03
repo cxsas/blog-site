@@ -28,6 +28,9 @@
     
     <!-- Google Tag Manager -->
     <script src="js/tracking.js"></script>
+    
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -129,7 +132,10 @@
             <h3>Stay Updated</h3>
             <p>Get our monthly newsletters delivered to your inbox with the latest industry insights and artist spotlights.</p>
             <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <div class="captcha-container">
+                    <div class="g-recaptcha" data-sitekey="6LdKnpkrAAAAAFNTO3CXpwCfxp91ciNZKIFqzrup"></div>
+                </div>
                 <button type="submit" class="button button-green">Subscribe</button>
             </form>
         </section>
