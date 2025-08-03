@@ -607,27 +607,27 @@ body {
 
 .newsletter-signup .newsletter-form {
     display: flex;
+    flex-direction: column;
     width: 100%;
     gap: 12px;
-    align-items: stretch;
+    align-items: center;
 }
 
 .newsletter-signup input[type="email"] {
-    flex: 1;
-    min-width: 0;
-    padding: 8px 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
     border: 1px solid #bbf7d0;
     border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 .newsletter-signup .button.button-green {
-    flex: none;
     width: auto;
-    min-width: unset;
-    max-width: unset;
-    align-self: auto;
+    min-width: 120px;
+    padding: 12px 24px;
     display: inline-block;
 }
 
@@ -765,11 +765,14 @@ body {
         gap: 8px;
     }
     
+    .newsletter-signup input[type="email"] {
+        max-width: 100%;
+    }
+    
     .newsletter-signup .button.button-green {
         width: 100%;
         max-width: 100%;
         min-width: unset;
-        align-self: auto;
     }
     
     .captcha-container {
