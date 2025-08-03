@@ -1,633 +1,248 @@
-<!DOCTYPE html><html><head><title></title></head><body aria-disabled="false">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Xchange Newsletter - August 2025</title>
+    <meta name="description" content="August 2025 Creative Xchange Newsletter featuring venue spotlights, new artists, and industry insights">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Centralized CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Tag Manager -->
+    <script src="js/tracking.js"></script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTTBS5WL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="https://www.creativexchange.io/source/new_web1/assets/Creative_Xchange_logo_with_text.png" alt="Creative Xchange" class="nav-logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#newsletters">Newsletters</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+            <button class="mobile-menu-button" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
- 
-  
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Creative Xchange Newsletter - 2025</title> 
-  <style>
-              /* Reset styles for email clients */
-              body, table, td, p, a, li, blockquote {
-                  -webkit-text-size-adjust: 100%;
-                  -ms-text-size-adjust: 100%;
-              }
-              table, td {
-                  mso-table-lspace: 0pt;
-                  mso-table-rspace: 0pt;
-              }
-              img {
-                  -ms-interpolation-mode: bicubic;
-                  border: 0;
-                  height: auto;
-                  line-height: 100%;
-                  outline: none;
-                  text-decoration: none;
-              }
-              
-              /* Main styles */
-              body {
-                  margin: 0 !important;
-                  padding: 0 !important;
-                  background-color: #f3f4f6;
-                  font-family: Arial, sans-serif;
-              }
-              
-              .container {
-                  max-width: 640px;
-                  margin: 0 auto;
-                  background-color: #ffffff;
-              }
-              
-              .header {
-                  background: linear-gradient(135deg, #c084fc 0%, #60a5fa 100%);
-                  color: #ffffff;
-                  padding: 32px 24px;
-                  text-align: center;
-              }
-              
-              .header h1 {
-                  margin: 0 0 16px 0;
-                  font-size: 36px;
-                  font-weight: bold;
-              }
-              
-              .header .logo {
-                  max-width: 300px;
-                  height: auto;
-                  margin: 0 0 16px 0;
-              }
-              
-              .header p {
-                  margin: 0 0 16px 0;
-                  font-size: 20px;
-                  opacity: 0.9;
-              }
-              
-              .header .date {
-                  font-size: 14px;
-                  opacity: 0.8;
-              }
-              
-              .content {
-                  padding: 32px 24px;
-              }
-              
-              .section {
-                  margin-bottom: 48px;
-              }
-              
-              .section h2 {
-                  color: #1f2937;
-                  font-size: 28px;
-                  font-weight: bold;
-                  margin: 0 0 24px 0;
-                  display: flex;
-                  align-items: center;
-                  gap: 8px;
-              }
-              
-              .section-icon {
-                  width: 32px;
-                  height: 32px;
-                  border-radius: 50%;
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  color: #ffffff;
-                  font-size: 16px;
-              }
-              
-              .purple-icon { background-color: #9333ea; }
-              .blue-icon { background-color: #2563eb; }
-              .green-icon { background-color: #16a34a; }
-              
-              .welcome {
-                  text-align: center;
-                  margin-bottom: 48px;
-              }
-              
-              .welcome h2 {
-                  color: #1f2937;
-                  font-size: 24px;
-                  margin-bottom: 16px;
-              }
-              
-              .welcome p {
-                  color: #6b7280;
-                  line-height: 1.6;
-                  max-width: 560px;
-                  margin: 0 auto;
-              }
-              
-              .card {
-                  border: 1px solid #e5e7eb;
-                  border-radius: 8px;
-                  overflow: hidden;
-                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-                  margin-bottom: 24px;
-              }
-              
-              .card img {
-                  width: 100%;
-                  height: auto;
-                  display: block;
-                  max-width: 100%;
-                  object-fit: cover;
-                  border-radius: 8px;
-              }
-              
-              .artist-image-container {
-                  width: 100%;
-                  aspect-ratio: 1 / 1;
-                  background: #f3f4f6;
-                  border-radius: 8px;
-                  overflow: hidden;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-              }
-              
-              .artist-image-container img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-              }
-              
-              .card-content {
-                  padding: 24px;
-              }
-              
-              .card h3 {
-                  color: #1f2937;
-                  font-size: 20px;
-                  font-weight: bold;
-                  margin: 0 0 8px 0;
-              }
-              
-              .card p {
-                  color: #6b7280;
-                  line-height: 1.6;
-                  margin: 0 0 16px 0;
-              }
-              
-              .badge {
-                  display: inline-block;
-                  background-color: #f3f4f6;
-                  color: #374151;
-                  padding: 4px 12px;
-                  border-radius: 16px;
-                  font-size: 12px;
-                  font-weight: 600;
-                  margin: 2px 4px 2px 0;
-              }
-              
-              .badge-primary {
-                  background-color: #9333ea;
-                  color: #ffffff;
-              }
-              
-              .badge-blue {
-                  background-color: #2563eb;
-                  color: #ffffff;
-              }
-              
-              .badge-green {
-                  background-color: #16a34a;
-                  color: #ffffff;
-              }
-              
-              .prompt-section {
-                  padding: 24px;
-                  border-radius: 8px;
-                  text-align: center;
-                  margin-bottom: 48px;
-                  border-left: 4px solid;
-              }
-              
-              .prompt-purple {
-                  background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%);
-                  border-left-color: #9333ea;
-              }
-              
-              .prompt-green {
-                  background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);
-                  border-left-color: #16a34a;
-              }
-              
-              .prompt-yellow {
-                  background: linear-gradient(135deg, #fefce8 0%, #fed7aa 100%);
-                  border-left-color: #eab308;
-              }
-              
-              .prompt-section h3 {
-                  color: #1f2937;
-                  font-size: 20px;
-                  font-weight: bold;
-                  margin: 0 0 12px 0;
-              }
-              
-              .prompt-section p {
-                  color: #6b7280;
-                  margin: 0 0 16px 0;
-              }
-              
-              .button {
-                  display: inline-block;
-                  padding: 12px 24px;
-                  border-radius: 6px;
-                  text-decoration: none;
-                  font-weight: 600;
-                  font-size: 14px;
-                  text-align: center;
-                  margin: 4px;
-                  border: none;
-              }
-              
-              .button-purple {
-                  background-color: #9333ea;
-                  color: #ffffff;
-              }
-              
-              .button-green {
-                  background-color: #16a34a;
-                  color: #ffffff;
-              }
-              
-              .button-yellow {
-                  background-color: #eab308;
-                  color: #ffffff;
-              }
-              
-              .button-outline {
-                  background-color: transparent;
-                  color: #16a34a;
-                  border: 1px solid #16a34a;
-              }
-              
-              .stats-grid {
-                  display: table;
-                  width: 100%;
-                  margin-bottom: 24px;
-              }
-              
-              .stats-row {
-                  display: table-row;
-              }
-              
-              .stats-cell {
-                  display: table-cell;
-                  padding: 8px;
-                  font-size: 14px;
-              }
-              
-              .footer {
-                  background-color: #1f2937;
-                  color: #ffffff;
-                  padding: 32px 24px;
-                  text-align: center;
-              }
-              
-              .footer p {
-                  color: #9ca3af;
-                  font-size: 14px;
-                  margin: 0 0 16px 0;
-              }
-              
-              .footer a {
-                  color: #9ca3af;
-                  text-decoration: none;
-                  font-size: 14px;
-                  margin: 0 12px;
-              }
-              
-              .footer a:hover {
-                  color: #ffffff;
-              }
-              
-              .artists-grid {
-                  display: grid;
-                  grid-template-columns: 1fr 1fr;
-                  gap: 24px;
-                  margin-bottom: 24px;
-              }
-              
-              .venues-grid {
-                  display: grid;
-                  grid-template-columns: 1fr 1fr 1fr;
-                  gap: 24px;
-                  margin-bottom: 24px;
-                  width: 100%;
-                  max-width: 100%;
-                  box-sizing: border-box;
-                  overflow: hidden;
-              }
-              
-              .venue-logo-card {
-                  text-align: center;
-                  padding: 20px;
-                  border: 1px solid #e5e7eb;
-                  border-radius: 8px;
-                  background-color: #ffffff;
-                  transition: transform 0.2s ease;
-                  width: 100%;
-                  max-width: 100%;
-                  box-sizing: border-box;
-                  overflow: hidden;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-              }
-              
-              .venue-logo-card:hover {
-                  transform: translateY(-2px);
-                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-              }
-              
-              .venue-logo {
-                  width: 80px;
-                  height: 80px;
-                  max-width: 100%;
-                  max-height: 80px;
-                  object-fit: contain;
-                  border-radius: 8px;
-                  display: block;
-                  margin: 0 auto 12px auto;
-                  background: #f3f4f6;
-              }
-              
-              .venue-name {
-                  font-size: 15px;
-                  font-weight: 600;
-                  color: #1f2937;
-                  margin: 0;
-                  font-family: inherit;
-                  word-break: break-word;
-              }
-              
-              .venue-location {
-                  font-size: 13px;
-                  color: #6b7280;
-                  margin: 4px 0 0 0;
-                  font-family: inherit;
-                  word-break: break-word;
-              }
-              
-              /* Responsive */
-              @media screen and (max-width: 640px) {
-                  .container {
-                      width: 100% !important;
-                  }
-                  .header, .content, .footer {
-                      padding: 24px 16px !important;
-                  }
-                  .header h1 {
-                      font-size: 28px !important;
-                  }
-                  .section h2 {
-                      font-size: 24px !important;
-                  }
-                  .artists-grid {
-                      grid-template-columns: 1fr;
-                      gap: 16px;
-                  }
-                  .venues-grid {
-                      grid-template-columns: 1fr;
-                      gap: 16px;
-                  }
-              }
-          </style> 
-  <style>
-              .newsletter-signup {
-                  background-color: #ecfdf5;
-                  padding: 24px;
-                  border-radius: 8px;
-                  margin-top: 32px;
-              }
-              .newsletter-signup h3 {
-                  color: #16a34a;
-                  margin: 0 0 12px 0;
-              }
-              .newsletter-signup p {
-                  color: #16a34a;
-                  font-size: 14px;
-                  margin: 0 0 12px 0;
-              }
-              .newsletter-signup .newsletter-form {
-                  display: flex;
-                  width: 100%;
-                  gap: 12px;
-                  align-items: stretch;
-              }
-              .newsletter-signup input[type="email"] {
-                  flex: 1;
-                  min-width: 0;
-                  padding: 8px 12px;
-                  border: 1px solid #bbf7d0;
-                  border-radius: 6px;
-                  font-size: 14px;
-                  box-sizing: border-box;
-              }
-              .newsletter-signup .button.button-green {
-                  flex: none;
-                  width: auto;
-                  min-width: unset;
-                  max-width: unset;
-                  align-self: auto;
-                  display: inline-block;
-              }
-              @media screen and (max-width: 640px) {
-                  .newsletter-signup {
-                      padding: 16px !important;
-                  }
-                  .newsletter-signup .newsletter-form {
-                      flex-direction: column;
-                      gap: 8px;
-                  }
-                  .newsletter-signup .button.button-green {
-                      width: 100%;
-                      max-width: 100%;
-                      min-width: unset;
-                      align-self: auto;
-                  }
-              }
-          </style> 
-  <div class="container"> 
-   <!-- Header --> 
-   <div class="header"> 
-    <img src="https://www.creativexchange.io/source/new_web1/assets/Creative_Xchange_logo_with_text.png" alt="Creative Xchange" class="logo"> 
-    <p>Your Monthly Music &amp; Entertainment Newsletter</p> 
-    <div class="date">
-      July 2025 Edition 
-    </div> 
-   </div> 
-   <!-- Main Content --> 
-   <div class="content"> 
-    <!-- Welcome Message --> 
-    <div class="welcome"> 
-     <h2>Creative Xchange is helping venues across the U.S. elevate their spaces with live music.</h2> 
-     <p>See how it’s done and what’s happening—get inspired by the creative ideas from our community of artists and hospitality partners. We’re here to make live entertainment a seamless part of unforgettable guest experiences.</p> 
-    </div> 
-    <!-- Venue Spotlight --> 
-    <div class="section"> 
-     <h2><span class="section-icon purple-icon">📍</span> Venue Spotlight</h2> 
-     <div class="card"> 
-      <a href="https://www.youtube.com/watch?v=-BjEeV7iuRU" target="_blank" rel="noopener noreferrer"><img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/5a778416-c4bf-4b7a-a331-95fa69372ed3/upload_5242970630890231439_200b07b2-d53c-49e0-a14d-4951bc6f9d80.jpg" alt="The Cosmic Theater"></a> 
-      <div class="card-content"> 
-       <div style="display: table; width: 100%; margin-bottom: 16px;"> 
-        <div style="display: table-cell;"> 
-         <h3>Aloft Dublin-Pleasanton</h3> 
-         <p style="margin: 0; color: #6b7280;">📍San Francisco Bay Area</p> 
-        </div> 
-        <div style="display: table-cell; text-align: right; vertical-align: top;"> 
-         <span style="color: #eab308;">&nbsp;</span> 
-        </div> 
-       </div> 
-       <p>Experience the vibrant, modern energy of Aloft Dublin-Pleasanton. More than just a stylish place to stay, it's a social hub where you can discover your new favorite local artist at the W XYZ® bar, a go-to destination for craft cocktails and regular live music performances.</p> 
-       <div class="stats-grid"> 
-        <div class="stats-row"> 
-         <div class="stats-cell"> 
-         </div> 
-        </div> 
-       </div> 
-       <div style="margin-bottom: 16px;"> 
-        <strong>Facilities:</strong> 
-        <br> 
-        <span class="badge">Bar&amp;Restaurant</span> 
-        <span class="badge">Outdoor Pool</span> 
-        <span class="badge">Fitness Center</span> 
-        <span class="badge">Game Room</span> 
-       </div> 
-       <div style="border-top: 1px solid #e5e7eb; padding-top: 16px;"> 
-        <p style="font-style: italic; color: #6b7280; margin: 0;">"Creative Xchange platform has been a huge help with getting our live entertainment up and running" - Manuel Grimaldo, General Manager</p> 
-       </div> 
-      </div> 
-     </div> 
-    </div> 
-    <!-- Seeking Spotlight --> 
-    <div class="prompt-section prompt-purple"> 
-     <h3>Seeking Our Next Industry Spotlight... Is It You?</h3> 
-     <p>We want to feature the best of the best in on-site event promotion. This is your opportunity to show off your initiative and be recognized as a leader by your peers. Submissions for our next edition are now open.</p> 
-     <a href="https://ad5i2j3p.fwfmsites.com" class="button button-purple">Contact Us</a> 
-    </div> 
-    <!-- New Venues Joined --> 
-    <div class="section"> 
-     <h2><span class="section-icon blue-icon">🏨</span> New Venues Joined</h2> 
-     <div style="margin-bottom: 24px;"> 
-      <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">🎉 Welcome to Creative Xchange!</p> 
-      <p>These amazing venues have recently joined our platform and are ready to bring live entertainment to their guests.</p> 
-     </div> 
-     <div class="venues-grid"> 
-      <!-- Venue 1 --> 
-      <div class="venue-logo-card"> 
-       <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/ab7f6b6b-375a-48df-8fc8-b44e410cd4ac/upload_828472570885325110_03b0c751-19c2-417b-9554-580800b8f758.jpg" alt="The Grand Hotel" class="venue-logo"> 
-       <p class="venue-name">Newport Harbor Hotel</p> 
-       <p class="venue-location">Newport, RI</p> 
-      </div> 
-      <!-- Venue 2 --> 
-      <div class="venue-logo-card"> 
-       <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/06849119-0a39-471d-a595-0bc1e02c2148/upload_6227016017916000516_e35ce783-d0e4-4fd2-b633-a355b769ad45.jpeg" alt="Riverside Resort" class="venue-logo"> 
-       <p class="venue-name">Lakeway Resort and Spa</p> 
-       <p class="venue-location">Lakeway, TX</p> 
-      </div> 
-      <!-- Venue 3 --> 
-      <div class="venue-logo-card"> 
-       <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/a0d961ce-f760-427a-9e5f-0a04f8b9b174/upload_8812848233306821332_fb09d095-21e6-4f5c-9a29-1358c119c685.jpeg" alt="Urban Boutique Hotel" class="venue-logo"> 
-       <p class="venue-name">Ambler</p> 
-       <p class="venue-location">Denver, CO</p> 
-      </div> 
-     </div> 
-    </div> 
-    <!-- Knowledge Articles --> 
-    <div class="section"> 
-     <h2><span class="section-icon green-icon">📚</span> Knowledge Hub</h2> 
-     <p style="margin-bottom: 24px;">Expert insights and actionable strategies to help you succeed in the live entertainment industry.</p> 
-     <div style="background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);" class="card"> 
-      <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/e7776b4c-199b-45ad-a58c-1187361cdd05/upload_4545854738121282807_a8904193-f801-419a-bd9b-65426720aefe.jpg" alt="Complete Guide to Booking Live Music"> 
-      <div class="card-content"> 
-       <div style="margin-bottom: 12px;"> 
-        <span class="badge badge-green">Featured</span> 
-        <span class="badge">On-site promotion</span> 
-        <span class="badge">Event Promotion</span> 
-       </div> 
-       <h3>Are Your Best Events a Secret to Your Guests?</h3> 
-       <p>You've curated unique on-site experiences, but are they getting the attention they deserve? Move beyond the front desk and learn how to use every corner of your property—from the elevator to the poolside—to boost participation and enhance the guest journey.</p> 
-       <div style="margin-bottom: 16px;"> 
-        <span class="badge">On-site promotion</span> 
-        <span class="badge">Event Promotion</span> 
-       </div> 
-       <p style="color: #16a34a; font-weight: 600; margin: 0;"> <a href="https://creativexchange.freshdesk.com/a/solutions/articles/151000216534" style="color: #16a34a; text-decoration: underline; font-weight: 600;"> Discover the Key Locations to Promote Your Events→ </a> </p> 
-      </div> 
-     </div> 
-    </div> 
-    <!-- Artists Joined --> 
-    <div class="section"> 
-     <h2><span class="section-icon blue-icon">👥</span> New Artists Joined</h2> 
-     <div style="margin-bottom: 24px;"> 
-      <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">📈 This Month: +127 New Artists</p> 
-      <p>Welcome our newest creative talents! These artists are ready to bring their unique sounds to venues across the country.</p> 
-     </div> 
-     <div class="artists-grid"> 
-      <!-- Artist 1 --> 
-      <div class="card"> 
-       <div class="artist-image-container"> 
-        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/867c5e93-6b1d-4d54-8e56-2a361c772745/upload_8264818409972064360_c30b9a49-f514-47f5-ba28-e1d1f6b13a06.jpg" alt="Jennifer Tefft"> 
-       </div> 
-       <div class="card-content"> 
-        <span class="badge badge-blue">New Artist</span> 
-        <h3>Jennifer Tefft</h3> 
-        <p style="margin: 0 0 8px 0; color: #6b7280;">Franklin, MA</p> 
-        <span class="badge">Country</span> 
-        <p>Called "Boston's most compelling performer" by If It's Too Loud, Jennifer Tefft is a fired up, energizing presence that pulls earthy music from its roots and breathes fresh, soulful, rock and roll life into them.</p> 
-       </div> 
-      </div> 
-      <!-- Artist 2 --> 
-      <div class="card"> 
-       <div class="artist-image-container"> 
-        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/07d994b2-f687-45cb-af05-4befd5af0bb2/upload_5401099071710402991_68ee43a5-9300-4684-9840-6367dd04ece5.jpg" alt=""> 
-       </div> 
-       <div class="card-content"> 
-        <span class="badge badge-blue">New Artist</span> 
-        <h3>Meghan Clarisse</h3> 
-        <p style="margin: 0 0 8px 0; color: #6b7280;">Denver, CO</p> 
-        <span class="badge">Country</span> 
-        <p>Meghan Clarisse is a Colorado-based singer-songwriter blending heartfelt storytelling with acoustic Americana and country soul</p> 
-       </div> 
-      </div> 
-      <!-- Artist 3 --> 
-      <div class="card"> 
-       <div class="artist-image-container"> 
-        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/aadcca97-f55e-4a37-8ef3-b7d5d2166516/upload_2782038322369990005_47768876-3b08-4778-8c47-2fcfb12fee5a.jpg" alt="Jake Williams"> 
-       </div> 
-       <div class="card-content"> 
-        <span class="badge badge-blue">New Artist</span> 
-        <h3>Jake Williams</h3> 
-        <p style="margin: 0 0 8px 0; color: #6b7280;">Phoenix,AZ</p> 
-        <span class="badge">Instrumental</span> 
-        <p>Original instrumental compositions and modern guitar techniques that blend elements of pop, rock, folk, and electroacoustic.</p> 
-       </div> 
-      </div> 
-      <!-- Artist 4 --> 
-      <div class="card"> 
-       <div class="artist-image-container"> 
-        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/5ec9ed35-a4f4-4cf9-a10c-21f3de02c5f7/upload_9198328471587967594_37ca781c-f3e3-45e8-87f2-11a26a409880.jpg" alt="Dalton Olive"> 
-       </div> 
-       <div class="card-content"> 
-        <span class="badge badge-blue">New Artist</span> 
-        <h3>Dalton Olive</h3> 
-        <p style="margin: 0 0 8px 0; color: #6b7280;">Midwest City, OK</p> 
-        <span class="badge">Pop</span> 
-        <p>Dalton Olive is a singer-songwriter. Music made for long drives, late nights, and everything in between.</p> 
-       </div> 
-      </div> 
-     </div> 
-    </div> 
-    <!-- Contact Us CTA --> 
-    <div class="prompt-section prompt-yellow"> 
-     <h3>Need help booking your next artist?</h3> 
-     <p>Our team is here to help you find the perfect talent and make your next event a success. Reach out for personalized support and booking assistance.</p> 
-     <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer" class="button button-yellow">Contact Us</a> 
-    </div> 
+    <div class="newsletter-container">
+        <!-- Header -->
+        <div class="newsletter-header">
+            <img src="https://www.creativexchange.io/source/new_web1/assets/Creative_Xchange_logo_with_text.png" alt="Creative Xchange" class="logo">
+            <p>Your Monthly Music &amp; Entertainment Newsletter</p>
+            <div class="date">
+                August 2025 Edition
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="newsletter-content">
+            <!-- Welcome Message -->
+            <div class="welcome">
+                <h2>Creative Xchange is helping venues across the U.S. elevate their spaces with live music.</h2>
+                <p>See how it's done and what's happening—get inspired by the creative ideas from our community of artists and hospitality partners. We're here to make live entertainment a seamless part of unforgettable guest experiences.</p>
+            </div>
+            
+            <!-- Venue Spotlight -->
+            <div class="newsletter-section">
+                <h2><span class="section-icon purple-icon">📍</span> Venue Spotlight</h2>
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=-BjEeV7iuRU" target="_blank" rel="noopener noreferrer">
+                        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/5a778416-c4bf-4b7a-a331-95fa69372ed3/upload_5242970630890231439_200b07b2-d53c-49e0-a14d-4951bc6f9d80.jpg" alt="The Cosmic Theater">
+                    </a>
+                    <div class="card-content">
+                        <div style="display: table; width: 100%; margin-bottom: 16px;">
+                            <div style="display: table-cell;">
+                                <h3>Aloft Dublin-Pleasanton</h3>
+                                <p style="margin: 0; color: #6b7280;">📍San Francisco Bay Area</p>
+                            </div>
+                            <div style="display: table-cell; text-align: right; vertical-align: top;">
+                                <span style="color: #eab308;">&nbsp;</span>
+                            </div>
+                        </div>
+                        <p>Experience the vibrant, modern energy of Aloft Dublin-Pleasanton. More than just a stylish place to stay, it's a social hub where you can discover your new favorite local artist at the W XYZ® bar, a go-to destination for craft cocktails and regular live music performances.</p>
+                        <div class="stats-grid">
+                            <div class="stats-row">
+                                <div class="stats-cell">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <strong>Facilities:</strong>
+                            <br>
+                            <span class="badge">Bar&amp;Restaurant</span>
+                            <span class="badge">Outdoor Pool</span>
+                            <span class="badge">Fitness Center</span>
+                            <span class="badge">Game Room</span>
+                        </div>
+                        <div style="border-top: 1px solid #e5e7eb; padding-top: 16px;">
+                            <p style="font-style: italic; color: #6b7280; margin: 0;">"Creative Xchange platform has been a huge help with getting our live entertainment up and running" - Manuel Grimaldo, General Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seeking Spotlight -->
+            <div class="prompt-section prompt-purple">
+                <h3>Seeking Our Next Industry Spotlight... Is It You?</h3>
+                <p>We want to feature the best of the best in on-site event promotion. This is your opportunity to show off your initiative and be recognized as a leader by your peers. Submissions for our next edition are now open.</p>
+                <a href="https://ad5i2j3p.fwfmsites.com" class="button button-purple">Contact Us</a>
+            </div>
+            
+            <!-- New Venues Joined -->
+            <div class="newsletter-section">
+                <h2><span class="section-icon blue-icon">🏨</span> New Venues Joined</h2>
+                <div style="margin-bottom: 24px;">
+                    <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">🎉 Welcome to Creative Xchange!</p>
+                    <p>These amazing venues have recently joined our platform and are ready to bring live entertainment to their guests.</p>
+                </div>
+                <div class="venues-grid">
+                    <!-- Venue 1 -->
+                    <div class="venue-logo-card">
+                        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/ab7f6b6b-375a-48df-8fc8-b44e410cd4ac/upload_828472570885325110_03b0c751-19c2-417b-9554-580800b8f758.jpg" alt="The Grand Hotel" class="venue-logo">
+                        <p class="venue-name">Newport Harbor Hotel</p>
+                        <p class="venue-location">Newport, RI</p>
+                    </div>
+                    <!-- Venue 2 -->
+                    <div class="venue-logo-card">
+                        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/06849119-0a39-471d-a595-0bc1e02c2148/upload_6227016017916000516_e35ce783-d0e4-4fd2-b633-a355b769ad45.jpeg" alt="Riverside Resort" class="venue-logo">
+                        <p class="venue-name">Lakeway Resort and Spa</p>
+                        <p class="venue-location">Lakeway, TX</p>
+                    </div>
+                    <!-- Venue 3 -->
+                    <div class="venue-logo-card">
+                        <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/a0d961ce-f760-427a-9e5f-0a04f8b9b174/upload_8812848233306821332_fb09d095-21e6-4f5c-9a29-1358c119c685.jpeg" alt="Urban Boutique Hotel" class="venue-logo">
+                        <p class="venue-name">Ambler</p>
+                        <p class="venue-location">Denver, CO</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Knowledge Articles -->
+            <div class="newsletter-section">
+                <h2><span class="section-icon green-icon">📚</span> Knowledge Hub</h2>
+                <p style="margin-bottom: 24px;">Expert insights and actionable strategies to help you succeed in the live entertainment industry.</p>
+                <div style="background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);" class="card">
+                    <img src="https://gallery.fwfmgallery.com/90094d4c-0db2-395d-aadc-98d5763496a5/files/e7776b4c-199b-45ad-a58c-1187361cdd05/upload_4545854738121282807_a8904193-f801-419a-bd9b-65426720aefe.jpg" alt="Complete Guide to Booking Live Music">
+                    <div class="card-content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge-green">Featured</span>
+                            <span class="badge">On-site promotion</span>
+                            <span class="badge">Event Promotion</span>
+                        </div>
+                        <h3>Are Your Best Events a Secret to Your Guests?</h3>
+                        <p>You've curated unique on-site experiences, but are they getting the attention they deserve? Move beyond the front desk and learn how to use every corner of your property—from the elevator to the poolside—to boost participation and enhance the guest journey.</p>
+                        <div style="margin-bottom: 16px;">
+                            <span class="badge">On-site promotion</span>
+                            <span class="badge">Event Promotion</span>
+                        </div>
+                        <p style="color: #16a34a; font-weight: 600; margin: 0;">
+                            <a href="https://creativexchange.freshdesk.com/a/solutions/articles/151000216534" style="color: #16a34a; text-decoration: underline; font-weight: 600;">Discover the Key Locations to Promote Your Events→</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Artists Joined -->
+            <div class="newsletter-section">
+                <h2><span class="section-icon blue-icon">👥</span> New Artists Joined</h2>
+                <div style="margin-bottom: 24px;">
+                    <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">📈 This Month: +127 New Artists</p>
+                    <p>Welcome our newest creative talents! These artists are ready to bring their unique sounds to venues across the country.</p>
+                </div>
+                <div class="artists-grid">
+                    <!-- Artist 1 -->
+                    <div class="card">
+                        <div class="artist-image-container">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&crop=face" alt="Sarah Chen">
+                        </div>
+                        <div class="card-content">
+                            <span class="badge badge-blue">New Artist</span>
+                            <h3>Sarah Chen</h3>
+                            <p style="margin: 0 0 8px 0; color: #6b7280;">Austin, TX</p>
+                            <span class="badge">Jazz</span>
+                            <p>Sarah Chen brings smooth jazz vocals and piano mastery to every performance. Her soulful interpretations of classic standards and original compositions create an intimate, sophisticated atmosphere perfect for upscale venues.</p>
+                        </div>
+                    </div>
+                    <!-- Artist 2 -->
+                    <div class="card">
+                        <div class="artist-image-container">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Marcus Rodriguez">
+                        </div>
+                        <div class="card-content">
+                            <span class="badge badge-blue">New Artist</span>
+                            <h3>Marcus Rodriguez</h3>
+                            <p style="margin: 0 0 8px 0; color: #6b7280;">Miami, FL</p>
+                            <span class="badge">Latin</span>
+                            <p>Marcus Rodriguez delivers energetic Latin fusion with his acoustic guitar and passionate vocals. His repertoire spans from traditional flamenco to modern Latin pop, creating vibrant, danceable performances that energize any crowd.</p>
+                        </div>
+                    </div>
+                    <!-- Artist 3 -->
+                    <div class="card">
+                        <div class="artist-image-container">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" alt="Emma Thompson">
+                        </div>
+                        <div class="card-content">
+                            <span class="badge badge-blue">New Artist</span>
+                            <h3>Emma Thompson</h3>
+                            <p style="margin: 0 0 8px 0; color: #6b7280;">Nashville, TN</p>
+                            <span class="badge">Folk</span>
+                            <p>Emma Thompson's haunting folk melodies and storytelling lyrics transport audiences to another time. Her acoustic guitar and harmonica create authentic Americana soundscapes perfect for intimate venues and storytelling sessions.</p>
+                        </div>
+                    </div>
+                    <!-- Artist 4 -->
+                    <div class="card">
+                        <div class="artist-image-container">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="David Park">
+                        </div>
+                        <div class="card-content">
+                            <span class="badge badge-blue">New Artist</span>
+                            <h3>David Park</h3>
+                            <p style="margin: 0 0 8px 0; color: #6b7280;">Seattle, WA</p>
+                            <span class="badge">Indie</span>
+                            <p>David Park's indie rock sound combines thoughtful lyrics with dynamic guitar work. His performances range from intimate acoustic sets to full-band energy, making him versatile for any venue size or atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Us CTA -->
+            <div class="prompt-section prompt-yellow">
+                <h3>Need help booking your next artist?</h3>
+                <p>Our team is here to help you find the perfect talent and make your next event a success. Reach out for personalized support and booking assistance.</p>
+                <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer" class="button button-yellow">Contact Us</a>
+            </div>
+        </div>
+    </div>
 
-   </div> 
-  </div></body></html>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Creative Xchange. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="https://creativexchange.io" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Centralized JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
