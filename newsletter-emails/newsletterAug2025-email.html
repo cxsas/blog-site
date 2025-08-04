@@ -307,20 +307,16 @@
             border: 1px solid #e5e7eb;
             border-radius: 8px;
             background-color: #ffffff;
-            transition: transform 0.2s ease;
             width: 100%;
             max-width: 100%;
             box-sizing: border-box;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
         }
         
         .venue-logo {
             width: 100%;
             height: 120px;
             max-width: 100%;
-            object-fit: cover;
             border-radius: 8px 8px 0 0;
             display: block;
             margin: 0;
@@ -436,7 +432,7 @@
         <!-- Header -->
         <div class="newsletter-header">
             <img src="https://blog.creativexchange.online/images/brand/Creative_Xchange_logo_with_text.png" alt="Creative Xchange" class="logo">
-            <p>Your Monthly Music &amp; Entertainment Newsletter</p>
+            <p>Hospitality Entertainment Insights – This Month’s Highlights</p>
             <div class="date">
                 August 2025 Edition
             </div>
@@ -494,26 +490,34 @@
                     <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">🎉 Welcome to Creative Xchange!</p>
                     <p>These amazing venues have recently joined our platform and are ready to bring live entertainment to their guests.</p>
                 </div>
-                <div class="venues-grid">
-                    <!-- Venue 1 -->
-                    <div class="venue-logo-card">
-                        <img src="https://blog.creativexchange.online/images/hotels/GBGreenvilleSC.jpeg" alt="Grand Bohemian Lodge" class="venue-logo">
-                        <p class="venue-name">Grand Bohemian Lodge</p>
-                        <p class="venue-location">Greenville, SC</p>
-                    </div>
-                    <!-- Venue 2 -->
-                    <div class="venue-logo-card">
-                        <img src="https://blog.creativexchange.online/images/hotels/Westin Desert Willow.jpeg" alt="The Westin Desert Willow Villas" class="venue-logo">
-                        <p class="venue-name">The Westin Desert Willow Villas</p>
-                        <p class="venue-location">Palm Desert, CA</p>
-                    </div>
-                    <!-- Venue 3 -->
-                    <div class="venue-logo-card">
-                        <img src="https://blog.creativexchange.online/images/hotels/RoyalSonestaBoston.jpg" alt="Royal Sonesta" class="venue-logo">
-                        <p class="venue-name">Royal Sonesta</p>
-                        <p class="venue-location">Boston, MA</p>
-                    </div>
-                </div>
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
+                    <tr>
+                        <!-- Venue 1 -->
+                        <td style="width: 33.33%; padding: 8px; vertical-align: top;">
+                            <div class="venue-logo-card">
+                                <img src="https://blog.creativexchange.online/images/hotels/GBGreenvilleSC.jpeg" alt="Grand Bohemian Lodge" class="venue-logo" style="width: 100%; height: 120px; max-width: 100%; border-radius: 8px 8px 0 0; display: block; margin: 0; background: #f3f4f6;">
+                                <p class="venue-name">Grand Bohemian Lodge</p>
+                                <p class="venue-location">Greenville, SC</p>
+                            </div>
+                        </td>
+                        <!-- Venue 2 -->
+                        <td style="width: 33.33%; padding: 8px; vertical-align: top;">
+                            <div class="venue-logo-card">
+                                <img src="https://blog.creativexchange.online/images/hotels/Westin-Desert-Willow.jpeg" alt="The Westin Desert Willow Villas" class="venue-logo" style="width: 100%; height: 120px; max-width: 100%; border-radius: 8px 8px 0 0; display: block; margin: 0; background: #f3f4f6;">
+                                <p class="venue-name">The Westin Desert Willow Villas</p>
+                                <p class="venue-location">Palm Desert, CA</p>
+                            </div>
+                        </td>
+                        <!-- Venue 3 -->
+                        <td style="width: 33.33%; padding: 8px; vertical-align: top;">
+                            <div class="venue-logo-card">
+                                <img src="https://blog.creativexchange.online/images/hotels/RoyalSonestaBoston.jpg" alt="Royal Sonesta" class="venue-logo" style="width: 100%; height: 120px; max-width: 100%; border-radius: 8px 8px 0 0; display: block; margin: 0; background: #f3f4f6;">
+                                <p class="venue-name">Royal Sonesta</p>
+                                <p class="venue-location">Boston, MA</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             
             <!-- Knowledge Articles -->
@@ -549,60 +553,72 @@
                     <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">📈 This Month: +92 New Artists</p>
                     <p>Welcome our newest creative talents! These artists are ready to bring their unique sounds to venues across the country.</p>
                 </div>
-                <div class="artists-grid">
-                    <!-- Artist 1 -->
-                    <div class="card">
-                        <div class="artist-image-container">
-                            <img src="https://blog.creativexchange.online/images/artists/Zydeco_Voodoo_Band.jpg" alt="Zydeco Voodoo Band">
-                        </div>
-                        <div class="card-content">
-                            <span class="badge badge-blue">New Artist</span>
-                            <h3>Zydeco Voodoo Band</h3>
-                            <p style="margin: 0 0 8px 0; color: #6b7280;">Chicago, IL</p>
-                            <span class="badge">Zydeco</span>
-                            <p>Zydeco Voodoo delivers New Orleans-style music and Zydeco with popular rock and blues. Their upbeat Bourbon Street sound gets audiences dancing and singing along. Family-friendly performances encourage audience participation with percussion instruments.</p>
-                        </div>
-                    </div>
-                    <!-- Artist 2 -->
-                    <div class="card">
-                        <div class="artist-image-container">
-                            <img src="https://blog.creativexchange.online/images/artists/Leo_Pearl.jpg" alt="Leo Pearl">
-                        </div>
-                        <div class="card-content">
-                            <span class="badge badge-blue">New Artist</span>
-                            <h3>Leo Pearl</h3>
-                            <p style="margin: 0 0 8px 0; color: #6b7280;">Laporte, CO</p>
-                            <span class="badge">Indie Rock</span>
-                            <p>Leo Pearl is an engineering major turned solo artist with original singer-songwriter material. His versatile voice ranges from delicate to powerful, playing ukulele, piano, and guitar across alt rock, psychedelic rock, and indie genres.</p>
-                        </div>
-                    </div>
-                    <!-- Artist 3 -->
-                    <div class="card">
-                        <div class="artist-image-container">
-                            <img src="https://blog.creativexchange.online/images/artists/Andrew_Potter.jpg" alt="Andrew Potter">
-                        </div>
-                        <div class="card-content">
-                            <span class="badge badge-blue">New Artist</span>
-                            <h3>Andrew Potter</h3>
-                            <p style="margin: 0 0 8px 0; color: #6b7280;">Jamestown, RI</p>
-                            <span class="badge">Blues/Jazz</span>
-                            <p>Andrew Potter delivers syncopated finger-style guitar and stride piano across blues, jazz, folk, and rock. His current album "I Haunt My Own House" features vivid musings on family, love, and fate with collaborator Wheeler Cole.</p>
-                        </div>
-                    </div>
-                    <!-- Artist 4 -->
-                    <div class="card">
-                        <div class="artist-image-container">
-                            <img src="https://blog.creativexchange.online/images/artists/Yulla.jpg" alt="Yulla">
-                        </div>
-                        <div class="card-content">
-                            <span class="badge badge-blue">New Artist</span>
-                            <h3>Yulla</h3>
-                            <p style="margin: 0 0 8px 0; color: #6b7280;">Atlanta, GA</p>
-                            <span class="badge">Soul</span>
-                            <p>Japanese-born artist Yulla weaves her cultural heritage into soulful sounds inspired by late '90s soul music. Grounded in harmony and introspection, she brings profound emotional depth and expressive freedom to her performances.</p>
-                        </div>
-                    </div>
-                </div>
+                <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
+                    <tr>
+                        <!-- Artist 1 -->
+                        <td style="width: 50%; padding: 8px; vertical-align: top;">
+                            <div class="card">
+                                <div class="artist-image-container">
+                                    <img src="https://blog.creativexchange.online/images/artists/Zydeco_Voodoo_Band.jpg" alt="Zydeco Voodoo Band" style="width: 100%; height: 100%; display: block;">
+                                </div>
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Zydeco Voodoo Band</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Chicago, IL</p>
+                                    <span class="badge">Zydeco</span>
+                                    <p>Zydeco Voodoo delivers New Orleans-style music and Zydeco with popular rock and blues. Their upbeat Bourbon Street sound gets audiences dancing and singing along. Family-friendly performances encourage audience participation with percussion instruments.</p>
+                                </div>
+                            </div>
+                        </td>
+                        <!-- Artist 2 -->
+                        <td style="width: 50%; padding: 8px; vertical-align: top;">
+                            <div class="card">
+                                <div class="artist-image-container">
+                                    <img src="https://blog.creativexchange.online/images/artists/Leo_Pearl.jpg" alt="Leo Pearl" style="width: 100%; height: 100%; display: block;">
+                                </div>
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Leo Pearl</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Laporte, CO</p>
+                                    <span class="badge">Indie Rock</span>
+                                    <p>Leo Pearl is an engineering major turned solo artist with original singer-songwriter material. His versatile voice ranges from delicate to powerful, playing ukulele, piano, and guitar across alt rock, psychedelic rock, and indie genres.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Artist 3 -->
+                        <td style="width: 50%; padding: 8px; vertical-align: top;">
+                            <div class="card">
+                                <div class="artist-image-container">
+                                    <img src="https://blog.creativexchange.online/images/artists/Andrew_Potter.jpg" alt="Andrew Potter" style="width: 100%; height: 100%; display: block;">
+                                </div>
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Andrew Potter</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Jamestown, RI</p>
+                                    <span class="badge">Blues/Jazz</span>
+                                    <p>Andrew Potter delivers syncopated finger-style guitar and stride piano across blues, jazz, folk, and rock. His current album "I Haunt My Own House" features vivid musings on family, love, and fate with collaborator Wheeler Cole.</p>
+                                </div>
+                            </div>
+                        </td>
+                        <!-- Artist 4 -->
+                        <td style="width: 50%; padding: 8px; vertical-align: top;">
+                            <div class="card">
+                                <div class="artist-image-container">
+                                    <img src="https://blog.creativexchange.online/images/artists/Yulla.jpg" alt="Yulla" style="width: 100%; height: 100%; display: block;">
+                                </div>
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Yulla</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Atlanta, GA</p>
+                                    <span class="badge">Soul</span>
+                                    <p>Japanese-born artist Yulla weaves her cultural heritage into soulful sounds inspired by late '90s soul music. Grounded in harmony and introspection, she brings profound emotional depth and expressive freedom to her performances.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             
             <!-- Contact Us CTA -->
@@ -619,7 +635,7 @@
         <div class="footer-content">
             <p>© 2025 Creative Xchange. All rights reserved.</p>
             <div class="footer-links">
-                <a href="https://creativexchange.online">Visit Website</a>
+                <a href="https://www.creativexchange.io">Visit Website</a>
                 <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer">Contact Support</a>
                 <a href="https://creativexchange.freshdesk.com" target="_blank" rel="noopener noreferrer">Help Center</a>
                 <a href="{{subscriber%3A%3Aunsubscribe_current}}" target="blank">Unsubscribe</a> &nbsp; &nbsp; &nbsp; &nbsp; 
