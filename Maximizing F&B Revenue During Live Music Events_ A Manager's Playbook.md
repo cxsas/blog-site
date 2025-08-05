@@ -1,6 +1,6 @@
 # Maximizing F&B Revenue During Live Music Events: A Manager's Playbook
 
-*A practical guide to strategic pricing, menu optimization, and service excellence for entertainment venues*
+*A practical guide to strategic pricing, menu optimization, and service excellence for hospitality venues*
 
 **By Creative Xchange**  
 *August 2025*
@@ -9,7 +9,7 @@
 
 ## Introduction
 
-Live music events create exciting opportunities for F&B revenue growth by transforming ordinary dining into memorable experiences. Entertainment venues benefit from guests who stay longer, spend more, and return more frequently than traditional diners. The key is leveraging the unique energy and engagement that live music brings to optimize your revenue potential.
+Live music events create exciting opportunities for hotels, resorts, and hospitality venues to transform their F&B operations into memorable experiences. Properties that integrate live entertainment into their dining spaces benefit from guests who stay longer, spend more, and return more frequently than traditional diners. The key is leveraging the unique energy and engagement that live music brings to optimize your existing F&B revenue potential.
 
 ---
 

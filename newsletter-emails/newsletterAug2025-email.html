@@ -52,6 +52,7 @@
         
         .newsletter-header {
             background: linear-gradient(135deg, #c084fc 0%, #60a5fa 100%);
+            background-color: #c084fc; /* Fallback for Outlook */
             color: #ffffff;
             padding: 32px 24px;
             text-align: center;
@@ -92,6 +93,13 @@
             gap: 8px;
         }
         
+        /* Outlook fallback for flexbox */
+        .newsletter-section h2 .section-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
         .section-icon {
             width: 32px;
             height: 32px;
@@ -99,99 +107,70 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
             font-size: 16px;
+            margin-right: 8px;
         }
         
-        .purple-icon { background-color: #9333ea; }
-        .blue-icon { background-color: #2563eb; }
-        .green-icon { background-color: #16a34a; }
-        
-        .welcome {
-            text-align: center;
-            margin-bottom: 48px;
+        .purple-icon {
+            background-color: #9333ea;
+            color: #ffffff;
         }
         
-        .welcome h2 {
-            color: #1f2937;
-            font-size: 24px;
-            margin-bottom: 16px;
+        .blue-icon {
+            background-color: #2563eb;
+            color: #ffffff;
         }
         
-        .welcome p {
-            color: #6b7280;
-            line-height: 1.6;
-            max-width: 560px;
-            margin: 0 auto;
+        .green-icon {
+            background-color: #16a34a;
+            color: #ffffff;
+        }
+        
+        .yellow-icon {
+            background-color: #eab308;
+            color: #ffffff;
         }
         
         .card {
+            background-color: #ffffff;
             border: 1px solid #e5e7eb;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             margin-bottom: 24px;
-            background: #ffffff;
         }
         
         .card img {
             width: 100%;
             height: auto;
             display: block;
-            max-width: 100%;
-            object-fit: cover;
-            border-radius: 8px 8px 0 0;
-        }
-        
-        .artist-image-container {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            background: #f3f4f6;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .artist-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
         }
         
         .card-content {
-            padding: 24px;
+            padding: 20px;
         }
         
-        .card h3 {
+        .card-content h3 {
             color: #1f2937;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             margin: 0 0 8px 0;
         }
         
-        .card p {
+        .card-content p {
             color: #6b7280;
-            line-height: 1.6;
             margin: 0 0 16px 0;
+            line-height: 1.6;
         }
         
         .badge {
             display: inline-block;
+            padding: 4px 8px;
             background-color: #f3f4f6;
             color: #374151;
-            padding: 4px 12px;
-            border-radius: 16px;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 500;
+            border-radius: 4px;
             margin: 2px 4px 2px 0;
-        }
-        
-        .badge-primary {
-            background-color: #9333ea;
-            color: #ffffff;
         }
         
         .badge-blue {
@@ -214,16 +193,19 @@
         
         .prompt-purple {
             background: linear-gradient(135deg, #ede9fe 0%, #f3e8ff 100%);
+            background-color: #ede9fe; /* Fallback for Outlook */
             border-left-color: #9333ea;
         }
         
         .prompt-green {
             background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);
+            background-color: #ecfdf5; /* Fallback for Outlook */
             border-left-color: #16a34a;
         }
         
         .prompt-yellow {
             background: linear-gradient(135deg, #fefce8 0%, #fed7aa 100%);
+            background-color: #fefce8; /* Fallback for Outlook */
             border-left-color: #eab308;
         }
         
@@ -426,6 +408,49 @@
             }
         }
     </style>
+    
+    <!--[if mso]>
+    <style>
+        /* Outlook-specific styles */
+        .newsletter-section h2 {
+            display: block !important;
+        }
+        
+        .section-icon {
+            display: inline-block !important;
+            vertical-align: middle !important;
+            margin-right: 8px !important;
+        }
+        
+        .artists-grid,
+        .venues-grid {
+            display: table !important;
+            width: 100% !important;
+        }
+        
+        .artists-grid > *,
+        .venues-grid > * {
+            display: table-cell !important;
+            vertical-align: top !important;
+        }
+        
+        .prompt-section {
+            border-radius: 0 !important;
+        }
+        
+        .card {
+            border-radius: 0 !important;
+        }
+        
+        .button {
+            border-radius: 0 !important;
+        }
+        
+        .venue-logo {
+            border-radius: 0 !important;
+        }
+    </style>
+    <![endif]-->
 </head>
 <body>
     <div class="email-container">
@@ -450,9 +475,7 @@
             <div class="newsletter-section">
                 <h2><span class="section-icon purple-icon">📍</span> Venue Spotlight</h2>
                 <div class="card">
-                    <a href="https://www.youtube.com/watch?v=-BjEeV7iuRU" target="_blank" rel="noopener noreferrer">
-                        <img src="https://blog.creativexchange.online/images/hotels/ScottsdaleMarriott.jpg" alt="Scottsdale Marriott Old Town">
-                    </a>
+                    <img src="https://blog.creativexchange.online/images/hotels/ScottsdaleMarriott.jpg" alt="Scottsdale Marriott Old Town">
                     <div class="card-content">
                         <div style="display: table; width: 100%; margin-bottom: 16px;">
                             <div style="display: table-cell;">
@@ -540,7 +563,7 @@
                             <span class="badge">Service Excellence</span>
                         </div>
                         <p style="color: #16a34a; font-weight: 600; margin: 0;">
-                            <a href="https://creativexchange.online/f&b-revenue-playbook.html" style="color: #16a34a; text-decoration: underline; font-weight: 600;">Read the Complete F&B Revenue Playbook→</a>
+                            <a href="https://blog.creativexchange.online/f&b-revenue-playbook.html" style="color: #16a34a; text-decoration: underline; font-weight: 600;">Read the Complete F&B Revenue Playbook→</a>
                         </p>
                     </div>
                 </div>
