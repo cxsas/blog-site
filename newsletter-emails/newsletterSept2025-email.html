@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Xchange Newsletter - September 2025</title>
+    <meta name="description" content="September 2025 Creative Xchange Newsletter featuring venue spotlights, new artists, and industry insights">
+    
+    <!-- Email-specific styles -->
+    <style>
+        /* Reset styles for email clients */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Main styles */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            min-width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #1f2937;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .header-text {
+            color: #ffffff;
+            font-size: 16px;
+            margin: 0 0 10px 0;
+        }
+        
+        .date {
+            color: #e0e7ff;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .content {
+            padding: 30px 20px;
+        }
+        
+        .welcome {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .welcome h2 {
+            color: #1f2937;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+        
+        .welcome p {
+            color: #6b7280;
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: #1f2937;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card h3 {
+            color: #1f2937;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+        
+        .card p {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0 0 15px 0;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #f3f4f6;
+            color: #374151;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .badge-blue {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .badge-green {
+            background: #dcfce7;
+            color: #166534;
+        }
+        
+        .venues-grid {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .venue-row {
+            display: table-row;
+        }
+        
+        .venue-cell {
+            display: table-cell;
+            width: 33.33%;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        
+        .venue-logo {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .venue-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #1f2937;
+            margin: 0 0 5px 0;
+        }
+        
+        .venue-location {
+            font-size: 12px;
+            color: #6b7280;
+            margin: 0;
+        }
+        
+        .artists-grid {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .artist-row {
+            display: table-row;
+        }
+        
+        .artist-cell {
+            display: table-cell;
+            width: 50%;
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        .artist-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 30px 20px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta-section h3 {
+            color: #92400e;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+        
+        .cta-section p {
+            color: #a16207;
+            font-size: 14px;
+            margin: 0 0 20px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #eab308;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .button:hover {
+            background: #ca8a04;
+        }
+        
+        .footer {
+            background: #f9fafb;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .footer p {
+            color: #6b7280;
+            font-size: 12px;
+            margin: 0 0 10px 0;
+        }
+        
+        .footer-links {
+            margin-top: 10px;
+        }
+        
+        .footer-links a {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            color: #9333ea;
+        }
+        
+        /* Mobile responsive */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .venue-cell, .artist-cell {
+                display: block;
+                width: 100% !important;
+            }
+            
+            .venues-grid, .artists-grid {
+                display: block;
+            }
+            
+            .venue-row, .artist-row {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://blog.creativexchange.online/images/brand/Creative_Xchange_logo_with_text.png" alt="Creative Xchange" class="logo">
+            <p class="header-text">Your Monthly Music & Entertainment Newsletter</p>
+            <p class="date">September 2025 Edition</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Welcome Message -->
+            <div class="welcome">
+                <h2>Elevate Dining with the Power of Live Music</h2>
+                <p>Discover how F&B managers are enhancing ambiance and boosting guest satisfaction.</p>
+            </div>
+            
+            <!-- Venue Spotlight -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-icon">📍</span>
+                    Venue Spotlight
+                </h2>
+                <div class="card">
+                    <a href="https://www.youtube.com/watch?v=-BjEeV7iuRU" target="_blank" rel="noopener noreferrer">
+                        <img src="https://blog.creativexchange.online/images/hotels/DoubleTreeOceanPointResort.jpeg" alt="DoubleTree Resort & Spa">
+                    </a>
+                    <div class="card-content">
+                        <h3>DoubleTree Resort & Spa</h3>
+                        <p style="color: #6b7280; margin: 0 0 15px 0;">📍 Miami, FL</p>
+                        <p>This Miami resort frames the Atlantic from every high-rise balcony and centers the action around a palm-lined pool with loungers and a poolside bar. Through Creative Xchange, the team has streamlined DJ bookings to enrich the day-to-dusk atmosphere—without missing a beat on its signature beachfront experience. Nearby shopping and dining abound, and both Aventura Mall and Brightline Aventura Station are minutes away.</p>
+                        <div style="margin: 15px 0;">
+                            <span class="badge">Oceanfront Pool</span>
+                            <span class="badge">Poolside Bar</span>
+                            <span class="badge">Spa Services</span>
+                            <span class="badge">Beach Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h3>We are on your preferred procurement platform</h3>
+                <p>F&B managers, we're now available on your favorite platform! For the first time, you can organize and manage your live entertainment spend all in one place. Ready to streamline your entertainment bookings?</p>
+                <a href="https://contact.creativexchange.online" class="button">Contact Us</a>
+            </div>
+            
+            <!-- New Venues Joined -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-icon">🏨</span>
+                    New Venues Joined
+                </h2>
+                <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">🎉 Welcome to Creative Xchange!</p>
+                <p style="margin-bottom: 20px;">These amazing venues have recently joined our platform and are ready to bring live entertainment to their guests.</p>
+                
+                <div class="venues-grid">
+                    <div class="venue-row">
+                        <div class="venue-cell">
+                            <img src="https://blog.creativexchange.online/images/hotels/CheyenneMountain.webp" alt="Cheyenne Mountain Resort" class="venue-logo">
+                            <p class="venue-name">Cheyenne Mountain Resort</p>
+                            <p class="venue-location">Colorado Springs, CO</p>
+                        </div>
+                        <div class="venue-cell">
+                            <img src="https://blog.creativexchange.online/images/hotels/rennaissance_club_sport.jpeg" alt="Renaissance Clubsports Aliso Viejo Hotel" class="venue-logo">
+                            <p class="venue-name">Renaissance Clubsports</p>
+                            <p class="venue-location">Aliso Viejo, CA</p>
+                        </div>
+                        <div class="venue-cell">
+                            <img src="https://blog.creativexchange.online/images/hotels/DoubleTree_westborough.avif" alt="DoubleTree by Hilton Hotel Boston - Westborough" class="venue-logo">
+                            <p class="venue-name">DoubleTree by Hilton Hotel Boston</p>
+                            <p class="venue-location">Westborough, MA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Knowledge Hub -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-icon">📚</span>
+                    Knowledge Hub
+                </h2>
+                <p style="margin-bottom: 20px;">Expert insights and actionable strategies to help you succeed in the live entertainment industry.</p>
+                
+                <div class="card" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);">
+                    <img src="https://blog.creativexchange.online/images/hotels/CheyenneMountain.webp" alt="Amplify Your Ambience Playbook">
+                    <div class="card-content">
+                        <div style="margin-bottom: 12px;">
+                            <span class="badge badge-blue">Featured</span>
+                            <span class="badge">Live Music</span>
+                            <span class="badge">Social Media</span>
+                        </div>
+                        <h3>Amplify Your Ambience</h3>
+                        <p>Learn how to transform your venue with live music and social media strategies that create unforgettable experiences and drive customer engagement. Discover the science behind music's impact on customer behavior and how to build a loyal following.</p>
+                        <div style="margin: 15px 0;">
+                            <span class="badge">Customer Engagement</span>
+                            <span class="badge">Social Media Strategy</span>
+                            <span class="badge">Venue Transformation</span>
+                        </div>
+                        <p style="color: #2563eb; font-weight: 600; margin: 0;">
+                            <a href="https://blog.creativexchange.online/playbooks/blog_amplify_your_ambience.html" style="color: #2563eb; text-decoration: underline; font-weight: 600;">Read the Complete Guide→</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Artists Joined -->
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="section-icon">👥</span>
+                    New Artists Joined
+                </h2>
+                <p style="color: #2563eb; font-weight: 600; margin-bottom: 8px;">📈 This Month: +51 New Artists</p>
+                <p style="margin-bottom: 20px;">Welcome our newest creative talents! These artists are ready to bring their unique sounds to venues across the country.</p>
+                
+                <div class="artists-grid">
+                    <div class="artist-row">
+                        <div class="artist-cell">
+                            <div class="card">
+                                <img src="https://blog.creativexchange.online/images/artists/Prost-Band.webp" alt="Prost Band" class="artist-image">
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>PROST!</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Chicago, IL</p>
+                                    <span class="badge">Oktoberfest</span>
+                                    <p>PROST! is Chicago's premier Oktoberfest band, providing a variety of Polkas, Slovenian, German, and American Songs for your entertainment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-cell">
+                            <div class="card">
+                                <img src="https://blog.creativexchange.online/images/artists/Briza_Madueno.jpg" alt="Briza Madueno" class="artist-image">
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Briza Madueno</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Whittier, CA</p>
+                                    <span class="badge">Hip Hop/Pop/R&B</span>
+                                    <p>Singer songwriter from Whittier California, creating a mixture of hip hop pop and rnb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-row">
+                        <div class="artist-cell">
+                            <div class="card">
+                                <img src="https://blog.creativexchange.online/images/artists/Persona_bell.jpg" alt="Persona Bell" class="artist-image">
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Persona Bell</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Concord, NC</p>
+                                    <span class="badge">Pianist/Vocalist</span>
+                                    <p>Dynamic pianist, vocalist and singer/songwriter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-cell">
+                            <div class="card">
+                                <img src="https://blog.creativexchange.online/images/artists/Ben_Melius.jpg" alt="Ben Melius" class="artist-image">
+                                <div class="card-content">
+                                    <span class="badge badge-blue">New Artist</span>
+                                    <h3>Ben Melius</h3>
+                                    <p style="margin: 0 0 8px 0; color: #6b7280;">Denver, CO</p>
+                                    <span class="badge">Genre Bender</span>
+                                    <p>Songwriter and guitarist whose music tells thoughtful stories, blending 70's disco-era R&B, 90's Neo-soul, folk, smooth jazz, and contemporary pop with classic rock and blues influences.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact CTA -->
+            <div class="cta-section">
+                <h3>Need help booking your next artist?</h3>
+                <p>Our team is here to help you find the perfect talent and make your next event a success. Reach out for personalized support and booking assistance.</p>
+                <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer" class="button">Contact Us</a>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2025 Creative Xchange. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.creativexchange.io">Visit Website</a>
+                    <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer">Contact Support</a>
+                    <a href="https://creativexchange.freshdesk.com" target="_blank" rel="noopener noreferrer">Help Center</a>
+                    <a href="{{subscriber%3A%3Aunsubscribe_current}}" target="blank">Unsubscribe</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <a href="https://www.creativexchange.io/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> 
+                    <a href="https://creativexchange.freshdesk.com/support/tickets/new" target="_blank" rel="noopener noreferrer">Contact Us</a> 
+                    <br> 
+                    <br>{{company::name}} 
+                    <br>{{company::address}} 
+                    <br>{{company::city}}, {{company::state}}, {{company::country}} &nbsp; &nbsp; &nbsp; &nbsp; 
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
